@@ -16,6 +16,10 @@ public class ProductController {
     @Autowired
     ProductService service;
 
+    /**
+     * Listar todos
+     * @return
+     */
     @GetMapping("")
     public List<Product> list(){
         return service.getAll();
